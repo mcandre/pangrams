@@ -46,4 +46,26 @@ describe("pangrams", function() {
       );
     });
   });
+
+  describe("isPerfectPangram", function() {
+    it("handle false positivies", function() {
+      assert.equal(
+        false,
+        pangrams.isPerfectPangram(
+          pangrams.pangrams.english.graphemes,
+          pangrams.pangrams.english.pangrams[0]
+        )
+      );
+    });
+
+    it("handle true positivies", function() {
+      assert.equal(
+        true,
+        pangrams.isPerfectPangram(
+          pangrams.pangrams.english.graphemes,
+          pangrams.pangrams.english.pangrams[2]
+        )
+      );
+    });
+  });
 });
