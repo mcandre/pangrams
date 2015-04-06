@@ -43,3 +43,9 @@ $ npm install [-g] pangrams
 # REQUIREMENTS
 
 * [Node.js](http://nodejs.org/) 0.8+
+
+# EVEN MORE PANGRAMS
+
+* [The Thousand Character Classic](https://en.wikipedia.org/wiki/Thousand_Character_Classic)
+* [Clagnut](http://clagnut.com/blog/2380/)
+* [Fun with Words](http://www.fun-with-words.com/pang_example.html)
