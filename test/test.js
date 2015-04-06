@@ -1,17 +1,17 @@
-"use strict";
+'use strict';
 
 var
-assert = require("assert"),
-pangrams = require("../lib/pangrams");
+assert = require('assert'),
+pangrams = require('../lib/pangrams');
 
-describe("pangrams", function() {
-  describe("pangrams", function() {
-    it("contents are all, in fact, pangrams", function() {
+describe('pangrams', function() {
+  describe('pangrams', function() {
+    it('contents are all, in fact, pangrams', function() {
       for (var language in pangrams.pangrams) {
         var graphemes = language.graphemes;
         var pangramClaims = language.pangrams;
 
-        for (i in pangramClaims) {
+        for (var i in pangramClaims) {
           assert.assertEqual(
             true,
             pangrams.isPangram(
@@ -24,8 +24,8 @@ describe("pangrams", function() {
     });
   });
 
-  describe("isPangram", function() {
-    it("should handle false positives", function() {
+  describe('isPangram', function() {
+    it('should handle false positives', function() {
       assert.equal(
         false,
         pangrams.isPangram(
@@ -35,7 +35,7 @@ describe("pangrams", function() {
       );
     });
 
-    it("should ignore case", function() {
+    it('should ignore case', function() {
       assert.equal(
         true,
         pangrams.isPangram(
@@ -45,7 +45,7 @@ describe("pangrams", function() {
       );
     });
 
-    it("should ignore punctuation", function() {
+    it('should ignore punctuation', function() {
       assert.equal(
         true,
         pangrams.isPangram(
@@ -55,7 +55,7 @@ describe("pangrams", function() {
       );
     });
 
-    it("should handle unicode", function() {
+    it('should handle unicode', function() {
       assert.equal(
         true,
         pangrams.isPangram(
@@ -66,8 +66,8 @@ describe("pangrams", function() {
     });
   });
 
-  describe("isPerfectPangram", function() {
-    it("handle false positivies", function() {
+  describe('isPerfectPangram', function() {
+    it('handle false positivies', function() {
       assert.equal(
         false,
         pangrams.isPerfectPangram(
@@ -77,7 +77,7 @@ describe("pangrams", function() {
       );
     });
 
-    it("handle true positivies", function() {
+    it('handle true positivies', function() {
       assert.equal(
         true,
         pangrams.isPerfectPangram(
@@ -89,8 +89,8 @@ describe("pangrams", function() {
       assert.equal(
         true,
         pangrams.isPerfectPangram(
-          pangrams.pangrams.japanese_hiragana.graphemes,
-          pangrams.pangrams.japanese_hiragana.pangrams[0]
+          pangrams.pangrams.japaneseHiragana.graphemes,
+          pangrams.pangrams.japaneseHiragana.pangrams[0]
         )
       );
     });

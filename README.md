@@ -17,10 +17,10 @@ true
 false
 > pangrams.isPerfectPangram(pangrams.pangrams.english.graphemes, 'Mr. Jock, TV quiz PhD, bags few lynx.');
 true
-> pangrams.pangrams.japanese_hiragana;
+> pangrams.pangrams.japaneseHiragana;
 { graphemes: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑを',
   pangrams: [ 'いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす' ] }
-> pangrams.isPerfectPangram(pangrams.pangrams.japanese_hiragana.graphemes, pangrams.pangrams.japanese_hiragana.pangrams[0]);
+> pangrams.isPerfectPangram(pangrams.pangrams.japaneseHiragana.graphemes, pangrams.pangrams.japaneseHiragana.pangrams[0]);
 true
 ```
 
@@ -33,3 +33,7 @@ https://www.npmjs.com/package/pangrams
 ```
 $ npm install [-g] pangrams
 ```
+
+# REQUIREMENTS
+
+* [Node.js](http://nodejs.org/) 0.8+
