@@ -2,7 +2,8 @@
 
 var
 assert = require('assert'),
-pangrams = require('../lib/pangrams');
+pangrams = require('../lib/pangrams'),
+Set = require('collections/set');
 
 describe('pangrams', function() {
   describe('pangrams', function() {
@@ -91,6 +92,30 @@ describe('pangrams', function() {
         pangrams.isPerfectPangram(
           pangrams.pangrams.japaneseHiragana.graphemes,
           pangrams.pangrams.japaneseHiragana.pangrams[0]
+        )
+      );
+    });
+  });
+
+  describe('lipogram', function() {
+    it('should handle true positives', function() {
+      assert.equal(
+        true,
+        Set('S').equals(
+          pangrams.lipogram(
+            pangrams.pangrams.english.graphemes,
+            pangrams.pangrams.english.lipograms[0]
+          )
+        )
+      );
+
+      assert.equal(
+        true,
+        Set().equals(
+          pangrams.lipogram(
+            pangrams.pangrams.english.graphemes,
+            pangrams.pangrams.english.pangrams[0]
+          )
         )
       );
     });

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "pkginfo": "~0.3.0",
+    "collections": "~1.2.2",
     "mocha": "1.21.4"
   },
   "devDependencies": {

@@ -4,7 +4,7 @@
 
 A [pangram](https://en.wikipedia.org/wiki/Pangram) is a phrase that uses all the letters of an alphabet, or all the syllables of a syllabary. For example, "The quick brown fox jumps over the lazy dog" contains all the letters of the English alphabet.
 
-The pangrams library can test arbitrary phrases for pangrammaticality.
+The pangrams library can test arbitrary phrases for pangrammaticality and identify [lipogram](https://en.wikipedia.org/wiki/Lipogram) sets.
 
 # EXAMPLES
 
@@ -28,6 +28,8 @@ true
   pangrams: [ 'いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす' ] }
 > pangrams.isPerfectPangram(pangrams.pangrams.japaneseHiragana.graphemes, pangrams.pangrams.japaneseHiragana.pangrams[0]);
 true
+> pangrams.lipogram(pangrams.pangrams.english.graphemes, 'The quick brown fox jumped over the lazy dog.').toArray();
+[ 'S' ]
 ```
 
 # NPM
