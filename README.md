@@ -1,9 +1,8 @@
 # pangrams - phrases that contain all graphemes of a writing system
 
-# EXAMPLE
+# EXAMPLES
 
 ```
-$ npm install
 $ node
 > var pangrams = require('pangrams');
 > pangrams.isPangram('abcdefghijklmnopqrstuvwxyz', 'The quick brown fox jumps over the lazy dog.');
@@ -23,4 +22,14 @@ true
   pangrams: [ 'いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす' ] }
 > pangrams.isPerfectPangram(pangrams.pangrams.japanese_hiragana.graphemes, pangrams.pangrams.japanese_hiragana.pangrams[0]);
 true
+```
+
+# NPM
+
+https://www.npmjs.com/package/pangrams
+
+# INSTALL
+
+```
+$ npm install [-g] pangrams
 ```
