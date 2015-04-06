@@ -1,5 +1,11 @@
 # pangrams - phrases that contain all graphemes of a writing system
 
+# ABOUT
+
+A [pangram](https://en.wikipedia.org/wiki/Pangram) is a phrase that uses all the letters of an alphabet, or all the syllables of a syllabary. For example, "The quick brown fox jumps over the lazy dog" contains all the letters of the English alphabet.
+
+The pangrams library can test arbitrary phrases for pangrammaticality.
+
 # EXAMPLES
 
 ```
