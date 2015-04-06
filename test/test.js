@@ -10,7 +10,7 @@ describe("pangrams", function() {
       assert.equal(
         false,
         pangrams.isPangram(
-          pangrams.pangrams.english.alphabet,
+          pangrams.pangrams.english.graphemes,
           'abc'
         )
       );
@@ -20,7 +20,7 @@ describe("pangrams", function() {
       assert.equal(
         true,
         pangrams.isPangram(
-          pangrams.pangrams.english.alphabet,
+          pangrams.pangrams.english.graphemes,
           pangrams.pangrams.english.pangrams[0]
         )
       );
@@ -30,8 +30,18 @@ describe("pangrams", function() {
       assert.equal(
         true,
         pangrams.isPangram(
-          pangrams.pangrams.english.alphabet,
+          pangrams.pangrams.english.graphemes,
           pangrams.pangrams.english.pangrams[1]
+        )
+      );
+    });
+
+    it("should handle unicode", function() {
+      assert.equal(
+        true,
+        pangrams.isPangram(
+          pangrams.pangrams.german.graphemes,
+          pangrams.pangrams.german.pangrams[0]
         )
       );
     });

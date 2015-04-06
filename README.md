@@ -12,4 +12,6 @@ true
 true
 > pangrams.isPangram('abcdefghijklmnopqrstuvwxyz', 'abc');
 false
+> pangrams.isPangram(pangrams.pangrams.german.graphemes, 'Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich');
+true
 ```
