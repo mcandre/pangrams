@@ -18,4 +18,9 @@ true
 false
 > pangrams.isPerfectPangram(pangrams.pangrams.english.graphemes, 'Mr. Jock, TV quiz PhD, bags few lynx.');
 true
+> pangrams.pangrams.japanese_hiragana;
+{ graphemes: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑを',
+  pangrams: [ 'いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす' ] }
+> pangrams.isPerfectPangram(pangrams.pangrams.japanese_hiragana.graphemes, pangrams.pangrams.japanese_hiragana.pangrams[0]);
+true
 ```

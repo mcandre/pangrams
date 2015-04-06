@@ -5,6 +5,25 @@ assert = require("assert"),
 pangrams = require("../lib/pangrams");
 
 describe("pangrams", function() {
+  describe("pangrams", function() {
+    it("contents are all, in fact, pangrams", function() {
+      for (var language in pangrams.pangrams) {
+        var graphemes = language.graphemes;
+        var pangramClaims = language.pangrams;
+
+        for (i in pangramClaims) {
+          assert.assertEqual(
+            true,
+            pangrams.isPangram(
+              graphemes,
+              pangramClaims[i]
+            )
+          );
+        }
+      }
+    });
+  });
+
   describe("isPangram", function() {
     it("should handle false positives", function() {
       assert.equal(
@@ -64,6 +83,14 @@ describe("pangrams", function() {
         pangrams.isPerfectPangram(
           pangrams.pangrams.english.graphemes,
           pangrams.pangrams.english.pangrams[2]
+        )
+      );
+
+      assert.equal(
+        true,
+        pangrams.isPerfectPangram(
+          pangrams.pangrams.japanese_hiragana.graphemes,
+          pangrams.pangrams.japanese_hiragana.pangrams[0]
         )
       );
     });
