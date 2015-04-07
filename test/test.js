@@ -164,4 +164,26 @@ describe('pangrams', function() {
       );
     });
   });
+
+  describe('heterogram', function() {
+    it('should handle true positives', function() {
+      assert.equal(
+        true,
+        pangrams.isHeterogram(
+          pangrams.pangrams.english.graphemes,
+          pangrams.pangrams.english.isograms[0]
+        )
+      );
+    });
+
+    it('should handle true negatives', function() {
+      assert.equal(
+        false,
+        pangrams.isHeterogram(
+          pangrams.pangrams.english.graphemes,
+          pangrams.pangrams.english.isograms[1]
+        )
+      );
+    });
+  });
 });

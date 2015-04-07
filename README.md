@@ -10,6 +10,7 @@ The pangrams library can test arbitrary phrases for
 * [lipograms](https://en.wikipedia.org/wiki/Lipogram)
 * [anagrams](https://en.wikipedia.org/wiki/Anagram)
 * [isograms](https://en.wikipedia.org/wiki/Isogram)
+* [heterograms](https://en.wikipedia.org/wiki/Heterogram_%28literature%29)
 
 # EXAMPLES
 
