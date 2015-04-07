@@ -1,6 +1,6 @@
 {
   "name": "pangrams",
-  "description": "phrases that contain all graphemes of a writing system",
+  "description": "a little linguistics toolkit",
   "version": "0.0.1",
   "repository": {
     "type": "git",

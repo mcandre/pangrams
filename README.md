@@ -1,4 +1,4 @@
-# pangrams - phrases that contain all graphemes of a writing system
+# pangrams - a little linguistics toolkit
 
 # ABOUT
 
