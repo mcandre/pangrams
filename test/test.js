@@ -109,7 +109,7 @@ describe('pangrams', function() {
     it('should handle true positives', function() {
       assert.equal(
         true,
-        Set('S').equals(
+        Set(['S']).equals(
           pangrams.lipogram(
             pangrams.pangrams.english.graphemes,
             pangrams.pangrams.english.lipograms[0]
@@ -136,6 +136,30 @@ describe('pangrams', function() {
         pangrams.isPangrammaticLipogram(
           pangrams.pangrams.english.graphemes,
           pangrams.pangrams.english.lipograms[0]
+        )
+      );
+    });
+  });
+
+  describe('isogram', function() {
+    it('should handle true positives', function() {
+      assert.equal(
+        true,
+        Set([1]).equals(
+          pangrams.isogram(
+            pangrams.pangrams.english.graphemes,
+            pangrams.pangrams.english.isograms[0]
+          )
+        )
+      );
+
+      assert.equal(
+        true,
+        Set([2]).equals(
+          pangrams.isogram(
+            pangrams.pangrams.english.graphemes,
+            pangrams.pangrams.english.isograms[1]
+          )
         )
       );
     });

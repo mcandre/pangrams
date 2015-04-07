@@ -9,6 +9,7 @@ The pangrams library can test arbitrary phrases for
 * [pangrams](https://en.wikipedia.org/wiki/Pangram)
 * [lipograms](https://en.wikipedia.org/wiki/Lipogram)
 * [anagrams](https://en.wikipedia.org/wiki/Anagram)
+* [isograms](https://en.wikipedia.org/wiki/Isogram)
 
 # EXAMPLES
 
