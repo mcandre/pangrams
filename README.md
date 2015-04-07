@@ -40,6 +40,8 @@ true
 [ 'S' ]
 > pangrams.isPangrammaticLipogram(pangrams.pangrams.english.graphemes, 'The quick brown fox jumped over the lazy dog.');
 true
+> pangrams.frequencies(pangrams.pangrams.english.graphemes, 'cat').toObject();
+{ C: 1, A: 1, T: 1 }
 ```
 
 # NPM

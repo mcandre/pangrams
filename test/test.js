@@ -3,7 +3,8 @@
 var
 assert = require('assert'),
 pangrams = require('../lib/pangrams'),
-Set = require('collections/set');
+Set = require('collections/set'),
+Map = require('collections/map');
 
 describe('pangrams', function() {
   describe('pangrams', function() {
@@ -136,6 +137,30 @@ describe('pangrams', function() {
         pangrams.isPangrammaticLipogram(
           pangrams.pangrams.english.graphemes,
           pangrams.pangrams.english.lipograms[0]
+        )
+      );
+    });
+  });
+
+  describe('isogram', function() {
+    it('should handle true positives', function() {
+      assert.equal(
+        true,
+        Map({ 'C': 1, 'A': 1, 'T': 1 }).equals(
+          pangrams.frequencies(
+            pangrams.pangrams.english.graphemes,
+            pangrams.pangrams.english.isograms[0]
+          )
+        )
+      );
+
+      assert.equal(
+        true,
+        Map({ 'A': 2, 'R': 2, 'I': 2, 'G': 2, 'N': 2 }).equals(
+          pangrams.frequencies(
+            pangrams.pangrams.english.graphemes,
+            pangrams.pangrams.english.isograms[1]
+          )
         )
       );
     });
