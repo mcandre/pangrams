@@ -8,6 +8,7 @@ The pangrams library can test arbitrary phrases for
 
 * [pangrams](https://en.wikipedia.org/wiki/Pangram)
 * [lipograms](https://en.wikipedia.org/wiki/Lipogram)
+* [pangrammatic lipograms](https://en.wikipedia.org/wiki/Lipogram#Pangrammatic_lipogram)
 * [anagrams](https://en.wikipedia.org/wiki/Anagram)
 * [isograms](https://en.wikipedia.org/wiki/Isogram)
 * [heterograms](https://en.wikipedia.org/wiki/Heterogram_%28literature%29)
