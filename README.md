@@ -30,6 +30,8 @@ true
 true
 > pangrams.lipogram(pangrams.pangrams.english.graphemes, 'The quick brown fox jumped over the lazy dog.').toArray();
 [ 'S' ]
+> pangrams.isPangrammaticLipogram(pangrams.pangrams.english.graphemes, 'The quick brown fox jumped over the lazy dog.');
+true
 ```
 
 # NPM

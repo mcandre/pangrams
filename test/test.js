@@ -128,4 +128,16 @@ describe('pangrams', function() {
       );
     });
   });
+
+  describe('isPangrammaticLipogram', function() {
+    it('should handle true positives', function() {
+      assert.equal(
+        true,
+        pangrams.isPangrammaticLipogram(
+          pangrams.pangrams.english.graphemes,
+          pangrams.pangrams.english.lipograms[0]
+        )
+      );
+    });
+  });
 });
