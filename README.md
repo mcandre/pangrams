@@ -2,15 +2,21 @@
 
 # ABOUT
 
-A [pangram](https://en.wikipedia.org/wiki/Pangram) is a phrase that uses all the letters of an alphabet, or all the syllables of a syllabary. For example, "The quick brown fox jumps over the lazy dog" contains all the letters of the English alphabet.
+A pangram is a phrase that uses all the letters of an alphabet, or all the syllables of a syllabary. For example, "The quick brown fox jumps over the lazy dog" contains all the letters of the English alphabet.
 
-The pangrams library can test arbitrary phrases for pangrammaticality and identify [lipogram](https://en.wikipedia.org/wiki/Lipogram) sets.
+The pangrams library can test arbitrary phrases for
+
+* [pangrams](https://en.wikipedia.org/wiki/Pangram)
+* [lipograms](https://en.wikipedia.org/wiki/Lipogram)
+* [anagrams](https://en.wikipedia.org/wiki/Anagram)
 
 # EXAMPLES
 
 ```
 $ node
 > var pangrams = require('pangrams');
+> pangrams.isAnagram('Torchwood', 'Doctor Who');
+true
 > pangrams.isPangram('abcdefghijklmnopqrstuvwxyz', 'The quick brown fox jumps over the lazy dog.');
 true
 > pangrams.isPangram('abcdefghijklmnopqrstuvwxyz', 'Pack my box with five dozen liquor jugs!');
