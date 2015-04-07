@@ -67,8 +67,16 @@ describe('pangrams', function() {
     });
   });
 
-  describe('isPerfectPangram', function() {
+  describe('isAnagram', function() {
     it('handle false positivies', function() {
+      assert.equal(
+        false,
+        pangrams.isAnagram(
+          pangrams.pangrams.english.graphemes,
+          pangrams.pangrams.english.pangrams[0]
+        )
+      );
+
       assert.equal(
         false,
         pangrams.isPerfectPangram(
@@ -81,7 +89,7 @@ describe('pangrams', function() {
     it('handle true positivies', function() {
       assert.equal(
         true,
-        pangrams.isPerfectPangram(
+        pangrams.isAnagram(
           pangrams.pangrams.english.graphemes,
           pangrams.pangrams.english.pangrams[2]
         )
@@ -89,7 +97,7 @@ describe('pangrams', function() {
 
       assert.equal(
         true,
-        pangrams.isPerfectPangram(
+        pangrams.isAnagram(
           pangrams.pangrams.japaneseHiragana.graphemes,
           pangrams.pangrams.japaneseHiragana.pangrams[0]
         )

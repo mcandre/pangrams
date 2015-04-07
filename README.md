@@ -19,14 +19,14 @@ true
 false
 > pangrams.isPangram(pangrams.pangrams.german.graphemes, 'Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich');
 true
-> pangrams.isPerfectPangram(pangrams.pangrams.english.graphemes, 'The quick brown fox jumps over the lazy dog.');
+> pangrams.isAnagram(pangrams.pangrams.english.graphemes, 'The quick brown fox jumps over the lazy dog.');
 false
-> pangrams.isPerfectPangram(pangrams.pangrams.english.graphemes, 'Mr. Jock, TV quiz PhD, bags few lynx.');
+> pangrams.isAnagram(pangrams.pangrams.english.graphemes, 'Mr. Jock, TV quiz PhD, bags few lynx.');
 true
 > pangrams.pangrams.japaneseHiragana;
 { graphemes: 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわゐゑを',
   pangrams: [ 'いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす' ] }
-> pangrams.isPerfectPangram(pangrams.pangrams.japaneseHiragana.graphemes, pangrams.pangrams.japaneseHiragana.pangrams[0]);
+> pangrams.isAnagram(pangrams.pangrams.japaneseHiragana.graphemes, pangrams.pangrams.japaneseHiragana.pangrams[0]);
 true
 > pangrams.lipogram(pangrams.pangrams.english.graphemes, 'The quick brown fox jumped over the lazy dog.').toArray();
 [ 'S' ]
