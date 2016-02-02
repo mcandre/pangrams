@@ -59,6 +59,13 @@ $ npm install [-g] pangrams
 
 * [Node.js](http://nodejs.org/) 0.8+
 
+## Optional
+
+* [Ruby](https://www.ruby-lang.org) 2.3+
+* [lili](https://rubygems.org/gems/lili)
+
+E.g., `bundle install`
+
 # EVEN MORE PANGRAMS
 
 * [The Thousand Character Classic](https://en.wikipedia.org/wiki/Thousand_Character_Classic)
