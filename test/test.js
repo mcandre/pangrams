@@ -10,15 +10,17 @@ describe('pangrams', function() {
   describe('pangrams', function() {
     it('contents are all, in fact, pangrams', function() {
       for (var language in pangrams.pangrams) {
-        var graphemes = language.graphemes;
-        var pangramClaims = language.pangrams;
+        var graphemes = pangrams.pangrams[language].graphemes;
+        var pangramClaims = pangrams.pangrams[language].pangrams;
 
         for (var i in pangramClaims) {
-          assert.assertEqual(
+          var pangramClaim = pangramClaims[i];
+
+          assert.equal(
             true,
             pangrams.isPangram(
               graphemes,
-              pangramClaims[i]
+              pangramClaim
             )
           );
         }
