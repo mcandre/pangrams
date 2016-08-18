@@ -57,7 +57,7 @@ $ npm install [-g] pangrams
 
 # REQUIREMENTS
 
-* [Node.js](http://nodejs.org/) 0.8+
+* [Node.js](http://nodejs.org/) 0.11.6+
 
 ## Optional
 
